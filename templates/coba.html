@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analisis Glukosa</title>
+    <script>
+        async function analyzeGlucose() {
+            const glucoseValue = document.getElementById('glucose').value;
+    
+            const response = await fetch('/analyze', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({glucose: glucoseValue})
+            });
+    
+            const result = await response.json();
+            document.getElementById('result').innerText = result.explanation;
+        }
+    </script>
+    
+</head>
+<body>
+    <h1>Masukkan Kadar Glukosa</h1>
+    <input type="number" id="glucose" placeholder="contoh: 120" />
+    <button onclick="analyzeGlucose()">Analisis</button>
+    <p><strong>Hasil:</strong></p>
+    <div id="result">--</div>
+</body>
+</html>
