@@ -1,1 +1,5 @@
-
+flask
+flask_sqlalchemy
+google.generativeai
+datetime
+pandas
