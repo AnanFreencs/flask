@@ -1,5 +1,16 @@
-flask
-flask_sqlalchemy
-google.generativeai
-datetime
-pandas
+Flask>=2.2.0
+Jinja2>=3.1.0
+Werkzeug>=2.2.0
+
+# Untuk klasifikasi/data processing
+numpy>=1.23
+pandas>=1.5
+scikit-learn>=1.1
+
+# Jika menggunakan visualisasi/statistik di Flask
+matplotlib>=3.6  # opsional
+seaborn>=0.12    # opsional
+
+# Jika ada form handling atau file uploads:
+python-dotenv>=0.21  # untuk load .env (opsional)
+Flask-WTF>=1.1.1     # opsional
