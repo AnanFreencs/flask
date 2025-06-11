@@ -1,3 +1,9 @@
+@@ -1,5 +1,16 @@
+flask
+flask_sqlalchemy
+google.generativeai
+datetime
+pandas
 Flask>=2.2.0
 Jinja2>=3.1.0
 Werkzeug>=2.2.0
@@ -13,4 +19,4 @@ seaborn>=0.12    # opsional
 
 # Jika ada form handling atau file uploads:
 python-dotenv>=0.21  # untuk load .env (opsional)
-Flask-WTF>=1.1.1     # opsional
+Flask-WTF>=1.1.1 
